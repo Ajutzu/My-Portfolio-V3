@@ -53,8 +53,8 @@ export default function Nav() {
         </div>
 
         <p className="text-md lg:text-start text-muted-foreground">
-          I'm a student developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I'm focused on
+          I&apos;m a student developer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I&apos;m focused on
           finishing my college degree at Batangas State University.
         </p>
       </div>
