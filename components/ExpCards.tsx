@@ -12,100 +12,36 @@ import { MoveRight } from "lucide-react";
 
 const jobPositions = [
   {
-    timeline: "Aug 2024 — Present",
-    currentPosition: "Founding Designer & Head of Product Design",
-    place: "Stealth AI Startup",
+    timeline: "Jan 2025 — Present",
+    currentPosition: "Web Developer Intern",
+    place: "Tech Executive Labs",
     previousPositions: [""],
     description:
-      "Establishing and leading the design team for a Stealth AI Startup set to bring the New Era of Money. My role involves founding and leading the design team, setting the vision and standards for design excellence, direct branding and actively contributing to hands-on product design for going to market.",
+      "Working on real-world projects involving modern web technologies. My role includes developing scalable applications, optimizing performance, and collaborating on software architecture.",
     skills: [
-      "Brand Identity",
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
+      "Node.js",
+      "Postman",
+      "React",
+      "Rest API"
     ],
   },
   {
-    timeline: "Mar 2024 — Present",
-    currentPosition: "Head of Product Design",
-    place: "Vela Exchange",
-    previousPositions: ["Designer and Front-end Developer"],
-    description:
-      "Leading the design team for Vela Exchange, a community-first, decentralized perpetuals trading platform. My role involves setting the vision and standards for design excellence, and actively contributing to hands-on product design.",
-    skills: [
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
-    ],
-  },
-  {
-    timeline: "Feb 2022 — Presents",
-    currentPosition: "Co-founder, Designer & Developer",
-    place: "Swoop Exchange",
+    timeline: "Feb 2024 — Present",
+    currentPosition: "Freelance Web Developer",
+    place: "Freelance",
     previousPositions: [""],
     description:
-      "Co-founded, designed, and developed a Next-Gen Decentralized Exchange from MVP to launch, scaling from zero to over $10M in trading volume. Swoop Exchange is powered by a novel Meta-Aggregation Engine that leverages sophisticated routing algorithms and APIs to automatically route trades from the most profitable liquidity sources, vastly improving swap efficiency and user experience.",
+      "Building web applications and APIs for various clients. My work spans full-stack development, integrating REST APIs, and ensuring responsive UI/UX.",
     skills: [
-      "Typescript",
-      "JavaScript",
-      "CSS",
-      "Tailwind CSS",
-      "MUI",
+      "PHP",
       "HTML",
-      "Figma",
-      "UI/UX Design",
-      "Blockchain tech",
-      "Project Management",
-      "Planning",
-      "Leadership",
-      "Testing & QA",
-    ],
-  },
-  {
-    timeline: "Aug 2016 — Mar 2024",
-    currentPosition: "Head of QA",
-    place: "Lykomitros Steel",
-    previousPositions: [
-      "Quality Assurance Engineer",
-      "QA/QC Administrative Support",
-    ],
-    description:
-      "Lead the QA department, focusing on renewable energy components in steel manufacturing. Maintained industry and client standards, ensuring product integrity for renewable energy.",
-    skills: [
-      "ISO Compliance",
-      "Quality Assurance",
-      "Engineering Management",
-      "ISO 9001",
-      "ISO 45001",
-      "ISO 14001",
-      "Requirement Assessment",
-      "Auditing",
-    ],
-  },
-  {
-    timeline: "Nov 2013 - May 2014",
-    currentPosition: "Digital Systems Admin - Internship",
-    place: "OTE Group (HTO)",
-    previousPositions: [""],
-    description:
-      "Gained valuable experience in digital systems administration, focusing on the management of contractors and capital.",
-    skills: [
-      "SQL",
-      "Administration",
-      "Problem-Solving",
-      "Computer Systems",
-      "System documentation",
-      "Networking",
-      "Cloud Computing",
-      "Automation",
-      "Scripting",
+      "CSS",
+      "JavaScript",
+      "MySQL"
     ],
   },
 ];
+
 
 export default function ExpCard() {
   return (
@@ -149,13 +85,13 @@ export default function ExpCard() {
       </>
       <div className="lg:px-12 mt-12">
         <a
-          href="mailto:alexander@meikopoulos.com"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center font-medium leading-tight text-foreground group"
         >
           <span className="border-b border-transparent pb-px transition hover:border-primary motion-reduce:transition-none">
-            Reach out for Full Resume
+            View for Full Resume
           </span>
           <MoveRight className="ml-1 inline-block h-5 w-5 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" />
         </a>

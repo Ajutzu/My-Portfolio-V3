@@ -7,34 +7,38 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://meikopoulos.com"),
+  metadataBase: new URL("http://localhost:3000/"),
   alternates: {
-    canonical: "https://meikopoulos.com",
+    canonical: "http://localhost:3000/",
   },
-  title: "Alexander Meikopoulos - Product Designer in AI, Web3, and Finance",
+  title: "AJ Castillo",
+  icons: {
+    icon: "./portfolioIcon.png", // Path to your favicon
+  },
   description:
-    "Alexander Meikopoulos is a Product designer, developer & founder.",
+    "Aeron James A. Castillo – Full-Stack Developer, Web Enthusiast, and Future DevOps Engineer.",
   keywords:
-    "Alexander Meikopoulos, Product Designer, AI, Web3, Finance, User Experience, UI/UX Design, Design Systems, Front-end Development, Decentralized Finance, DeFi, Swoop Exchange, Vela Exchange, Stealth AI Startup, Technology, Innovation, Human-Centered Design",
+    "Aeron James Castillo, Aeron James, AJ Castillo, Full-Stack Developer, Web Development, DevOps, UI/UX Design, PHP, JavaScript, React, Node.js",
   openGraph: {
     locale: "en_US",
-    siteName: "Alexander Meikopoulos",
+    siteName: "Aeron James Castillo",
     type: "website",
-    title: "Alexander Meikopoulos",
+    title: "Aeron James Castillo",
     description:
-      "Alexander Meikopoulos is a Product designer, developer & founder.",
-    url: "https://meikopoulos.com",
+      "Aeron James A. Castillo – Full-Stack Developer, Web Enthusiast, and Future DevOps Engineer.",
+    url: "https://yourwebsite.com", 
     images: [
       {
-        url: "./og-large-meik-2.jpg",
+        url: "./aj-castillo-og.jpg", 
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alexander Meikopoulos",
+    title: "Aeron James Castillo",
   },
 };
+
 
 export default function RootLayout({
   children,
@@ -57,3 +61,4 @@ export default function RootLayout({
     </html>
   );
 }
+

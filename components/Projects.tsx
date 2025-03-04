@@ -8,82 +8,82 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MoveUpRight } from "lucide-react";
+import { MoveUpRight, MoveDown, MoveUp, MoveRight } from "lucide-react";
+import { useState } from "react";
 
 const jobProjects = [
   {
-    imagePath: "/vela.avif",
-    title: "Vela Exchange - Product Design",
+    imagePath: "/trektribe.png",
+    title: "TrekTribe",
     description:
-      "Led a team of 4 designers, implementing design systems and processes to launch flagship features like Duels, Accounts, Loyalty Tiers, and Notification Tray and System.",
-    skills: [
-      "Product Design",
-      "UI/UX Design",
-      "Design System",
-      "Design Strategy",
-      "Vercel",
-      "Figma",
-    ],
-    link: "https://vela.exchange",
+      "A comprehensive web platform developed as my final Web Development project that connects cyclists and runners in a vibrant community. TrekTribe provides specialized features tailored to both sports while capitalizing on the surging popularity of outdoor fitness activities.",
+    skills: ["PHP", "HTML5", "CSS3", "JavaScript", "MySQL", "Bootstrap"],
+    link: "https://trektribe.wuaze.com",
   },
   {
-    imagePath: "/l3x.avif",
-    title: "L3X Network - Founding Product Design",
+    imagePath: "/gradify.png",
+    title: "Gradify",
     description:
-      "L3X Network is a Layer 3 interoperability blockchain designed to provide institutions, developers, and users with secure, compliant, and efficient access to decentralized finance (DeFi) markets. My role involved founding and leading the design team, mapping UX, and designing the protocol's Landing Page and Interfaces for the Bridge, Trading, Swap, and Staking platforms.",
-    skills: [
-      "Product Design",
-      "UI/UX Design",
-      "Design System",
-      "Design Strategy",
-      "Vercel",
-      "Figma",
-    ],
-    link: "https://l3x.com",
+      "A web-based application that allows users to manage and calculate their grades, built with PHP and MySQL. It provides a user-friendly interface for entering grades and calculating final grades. It will also rank the students based on their final grades in a specific classroom.",
+    skills: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
+    link: "https://gradify.likesyou.org",
   },
   {
-    imagePath: "/swoop-og-banner.webp",
-    title: "Swoop Exchange - Landing Page",
+    imagePath: "/abus.png",
+    title: "Abus - DBMS Project",
     description:
-      "Swoop's landing page highlights the platform's use cases and solutions. Swoop Exchange is a Meta-DEX Aggregator that automatically sources, ranks and routes quotes from the best DEX Aggregators and Bridges, ensuring the best prices for on-chain and cross-chain swaps. Swoop Exchange has achieved millions in USD volume and currently has around 4000 monthly users with 0 paid marketing.",
-    skills: [
-      "Next.js",
-      "Framer",
-      "Shadcn/ui",
-      "Typescript",
-      "JavaScript",
-      "Vercel",
-      "Figma",
-    ],
-    link: "https://swoop.exchange",
+      "A comprehensive appointment and booking system for resorts and hotels, developed as a Database Management System (DBMS) project. The system handles reservations and scheduling, demonstrating core booking functionalities without payment integration.",
+    skills: ["PHP", "HTML5", "CSS3", "JavaScript", "Python", "PostgreSQL"],
+    link: "https://github.com/Ajutzu/System-Project-ADBMS",
   },
   {
-    imagePath: "/app-front-1.png",
-    title: "Swoop Exchange - Application Design",
+    imagePath: "/portfolioV2.png",
+    title: "My Portfolio V2",
     description:
-      "Swoop Exchange is a next generation Meta Decentralized Exchange and Bridge Aggregator. By Aggregating the Aggregators, Bridges, and Liquidity across chains, and off-chain it solves protocol and liquidity fragmentation, significantly improving UX. Provides access to: 450,000+ Tokens, 7+ Aggregators, 13+ Bridges, 50+ DEXs, 280+ Liquidity Sources and 16+ Blockchains.",
-    skills: [
-      "Next.js",
-      "Typescript",
-      "JavaScript",
-      "MUI",
-      "Tailwind CSS",
-      "Vercel",
-      "Figma",
-    ],
-    link: "https://app.mtopswap.com",
+      "A simple portfolio website built using React, connected to Google Analytics and featuring Gemini Integration. The website showcases personal projects, skills, and achievements in an elegant and minimalist design. It includes smooth animations, interactive elements, and a chatbot that enhances user engagement.",
+    skills: ["React", "Boostrap", "Gemini API"],
+    link: "https://aeron-james-castillo.netlify.app/",
   },
   {
-    imagePath: "/meikopoulos.com_PC.png",
-    title: "meikopoulos.com",
+    imagePath: "/toDoList.png",
+    title: "TimeSand",
     description:
-      "The portfolio webpage you are looking at right now. Based on Brittany Chiang's website (they awesome). Coded in Visual Studio Code.",
-    skills: ["Typescript", "JavaScript", "Tailwind CSS", "Vercel"],
-    link: "https://github.com/0xAlexander/my-website",
+      "This To-Do List app allows users to add and delete tasks, all while saving data in the browser's local storage for persistent use. It provides a clean and simple interface for managing daily tasks, with an easy-to-use design built with HTML, CSS, and Bootstrap.",
+    skills: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    link: "https://ajutzu.github.io/To-Do-List-App/",
+  },
+  {
+    imagePath: "/chatBot.png",
+    title: "Chat Bot - Activity",
+    description:
+      "A simple chat bot built using Python that can answer questions and provide information about the user. It utilizes basic string matching techniques and predefined responses to simulate a conversation. This project demonstrates the fundamentals of AI-driven text processing and serves as a beginner-friendly introduction to chatbot development.",
+    skills: ["Python"],
+    link: "https://github.com/Ajutzu/Chat-Bot-Project-ACP",
+  },
+  {
+    imagePath: "/portfolioV1.png",
+    title: "My Portfolio V1",
+    description:
+      "A simple portfolio website built using HTML, CSS, and JS, connected to Google Analytics and featuring a simple JS Bot. The website showcases personal projects, skills, and achievements in an elegant and minimalist design. It includes smooth animations, interactive elements, and a chatbot that enhances user engagement.",
+    skills: ["HTML5", "CSS3", "JavaScript"],
+    link: "https://ajutzu-portfolio-v1.pages.dev/",
+  },
+  {
+    imagePath: "/landingPage.png",
+    title: "Landing Page",
+    description:
+      "A fully responsive and interactive landing page built with Bootstrap CSS and HTML, featuring a user-friendly interface. Designed for modern web accessibility, this landing page ensures smooth navigation across all devices. It includes eye-catching animations, a well-structured layout, and optimized performance for a seamless browsing experience.",
+    skills: ["HTML5", "CSS3", "Bootstrap"],
+    link: "https://activity-1-bootstrap-wts.pages.dev/",
   },
 ];
 
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
+  // Determine the number of projects to display based on the showAll state
+  const displayedProjects = showAll ? jobProjects : jobProjects.slice(0, 4);
+
   return (
     <section id="projects" className="scroll-mt-16 lg:mt-16">
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/0 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -92,7 +92,7 @@ export default function Projects() {
         </h2>
       </div>
       <>
-        {jobProjects.map((project, index) => (
+        {displayedProjects.map((project, index) => (
           <a
             key={index}
             href={project.link}
@@ -129,6 +129,17 @@ export default function Projects() {
           </a>
         ))}
       </>
+      <div className="lg:px-12 mt-12">
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="inline-flex items-center font-medium leading-tight text-foreground group"
+        >
+          <span className="border-b border-transparent pb-px transition hover:border-primary motion-reduce:transition-none">
+            {showAll ? "View Less" : "View More"}
+          </span>
+          <MoveRight className="ml-1 inline-block h-5 w-5 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" />
+        </button>
+      </div>
     </section>
   );
 }

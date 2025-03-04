@@ -11,18 +11,12 @@ type NavItem = {
 };
 
 export default function Nav() {
-  const activeSection = useActiveSection([
-    "about",
-    "experience",
-    "projects",
-    "contact",
-  ]);
+  const activeSection = useActiveSection(["about", "experience", "projects"]);
 
   const navItems: NavItem[] = [
     { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const getNavItemClasses = (href: string) => {
@@ -45,24 +39,23 @@ export default function Nav() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 flex flex-col lg:gap-4">
       <div className="flex flex-col gap-4 lg:pr-24 mt-6 lg:mt-0">
-        <div className="w-full flex lg:items-center lg:justify-start">
+        <div className="w-full flex items-center gap-4 lg:gap-6">
           <Avatar className="w-24 lg:w-36 h-auto border-2 border-primary bg-secondary">
             <AvatarImage src="./avatar.png" />
-            <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border-1 border-primary">
-              AM
+            <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 border-1 border-primary">
+              AJ
             </AvatarFallback>
           </Avatar>
+          <div className="flex flex-col">
+            <h1 className="text-[40px] font-bold">AJ Castillo</h1>
+            <h2 className="text-lg">Web Developer</h2>
+          </div>
         </div>
-        <h1 className="text-[42px] font-bold lg:text-start">
-          Hi, i&#39;m Alexander 👋
-        </h1>
-        <h2 className="text-xl lg:text-start">
-          Product designer, developer, founder.
-        </h2>
-        <p className="text-lg lg:text-start text-muted-foreground">
-          I help innovative startups in AI, Web3, and Finance craft exceptional
-          user experiences, translating complex technologies into intuitive
-          interfaces that resonate with humans.
+
+        <p className="text-md lg:text-start text-muted-foreground">
+          I'm a student developer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I'm focused on
+          finishing my college degree at Batangas State University.
         </p>
       </div>
       <nav className="lg:flex hidden">
@@ -85,7 +78,7 @@ export default function Nav() {
       <ul className="flex flex-row gap-6 mt-6 lg:mt-0">
         <Button variant="outline" size="icon">
           <a
-            href="https://github.com/0xAlexander"
+            href="https://github.com/Ajutzu"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -94,7 +87,7 @@ export default function Nav() {
         </Button>
         <Button variant="outline" size="icon">
           <a
-            href="https://linkedin.com/in/0xAlexander"
+            href="https://www.linkedin.com/in/aeron-james-castillo-198350306/"
             target="_blank"
             rel="noopener noreferrer"
           >
