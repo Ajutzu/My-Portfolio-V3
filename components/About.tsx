@@ -20,7 +20,7 @@ export default function About() {
     functional and aesthetically refined.
   </p>
   <p className="text-start text-muted-foreground lg:px-6">
-    Currently, I’m developing at{" "}
+    Currently, I&apos;m developing at{" "}
     <span className="text-white">          
       <a
         className="no-wrap text-primary dark:text-white"
@@ -39,14 +39,14 @@ export default function About() {
   <p className="text-start text-muted-foreground lg:px-6">
     My journey has taken me across various projects, from AI-driven tools to
     robust web platforms. Whether refining a UI component, optimizing an API,
-    or integrating DevOps workflows, I aim to craft seamless experiences. I’m
+    or integrating DevOps workflows, I aim to craft seamless experiences. I&apos;m
     always learning, evolving, and one day, I hope to give back by mentoring
     the next generation of developers.{" "} 
     <span className="no-wrap text-primary dark:text-white">
       I thrive in fast - paced environments where problem-solving and creativity
       go hand in hand. 
     </span>{" "}
-    When I’m not coding, I enjoy exploring new technologies and staying updated
+    When I&apos;m not coding, I enjoy exploring new technologies and staying updated
     on industry trends to push the boundaries of innovation.
   </p>
 </div>
