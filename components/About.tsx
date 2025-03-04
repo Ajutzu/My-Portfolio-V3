@@ -11,7 +11,7 @@ export default function About() {
 </div>
 <div className="flex flex-col gap-4">
   <p className="text-start text-muted-foreground lg:px-6">
-    I’m a developer passionate about crafting user-friendly, accessible, and
+    I&apos;m a developer passionate about crafting user-friendly, accessible, and
     visually polished experiences.{" "}
     <span className="no-wrap text-primary dark:text-white">
       I believe technology should be seamless and intuitive.
