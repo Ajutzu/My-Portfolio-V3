@@ -82,7 +82,7 @@ export default function Projects() {
   const [showAll, setShowAll] = useState(false);
 
   // Determine the number of projects to display based on the showAll state
-  const displayedProjects = showAll ? jobProjects : jobProjects.slice(0, 4);
+  const displayedProjects = showAll ? jobProjects : jobProjects.slice(0, 3);
 
   return (
     <section id="projects" className="scroll-mt-16 lg:mt-16">
@@ -100,7 +100,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="hover:cursor-pointer"
           >
-            <Card className="group lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200">
+            <Card className="group lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border-transparent dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50">
               <CardHeader className="h-full w-full lg:w-1/3 mb-4 p-0">
                 <Image
                   src={project.imagePath}

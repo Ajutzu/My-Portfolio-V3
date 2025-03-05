@@ -5,24 +5,33 @@
 @layer components {
   .mouse-aura {
     @apply fixed inset-0 pointer-events-none;
-    background-image: radial-gradient(
-      circle at var(--mouse-x) var(--mouse-y),
-      rgba(63, 81, 181, 0.3) 0%,
-      rgba(63, 81, 181, 0.15) 30%,
-      rgba(63, 81, 181, 0) 50%
-    );
+    will-change: background-image;
+    mix-blend-mode: overlay;
+    transition: background-image 0.05s ease-out;
 
-    /* Media query for touch devices */
-    @media (hover: none) and (pointer: coarse) {
+    background-image: radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 10%,
+      rgba(36, 51, 77, 0.4) 30%,
+      rgba(0, 0, 0, 0.8) 60%,
+      rgba(36, 51, 77, 1) 100%
+    );
+  }
+
+  /* Mobile Optimization */
+  @media (hover: none) and (pointer: coarse) {
+    .mouse-aura {
       background-image: radial-gradient(
-        circle at top left,
-        rgba(63, 81, 181, 0.3) 0%,
-        rgba(63, 81, 181, 0.15) 30%,
-        rgba(63, 81, 181, 0) 50%
+        circle at center,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 1) 100%
       );
     }
   }
 }
+
 
 @layer base {
   :root {
@@ -32,7 +41,7 @@
     --card-foreground: 222.2 50% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 50% 10%;
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 0 0% 0%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -49,13 +58,13 @@
   }
 
   .dark {
-    --background: 222.2 50% 10%;
+    --background: 220, 30%, 20%;
     --foreground: 210 40% 98%;
-    --card: 222.2 50% 10%;
+    --card: 220, 30%, 20%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 50% 10%;
     --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 0, 1%, 100%;
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;

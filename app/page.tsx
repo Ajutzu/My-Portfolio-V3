@@ -5,6 +5,7 @@ import ExpCard from "@/components/ExpCards";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import Certificate from "@/components/Certificate";
 import { useEffect, useRef } from "react";
 import { Inter } from "next/font/google";
 
@@ -44,6 +45,7 @@ export default function Home() {
             <About />
             <ExpCard />
             <Projects />
+            <Certificate />
             <Footer />
           </main>
         </div>
